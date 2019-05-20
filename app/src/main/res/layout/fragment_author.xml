@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            tools:text="Name" android:textStyle="bold" android:textAllCaps="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/name" android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="48dp"
+            tools:text="Username"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            tools:text="Email"
+            app:layout_constraintTop_toBottomOf="@+id/username" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="48dp" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" app:layout_constraintTop_toBottomOf="@+id/name"
+            android:layout_marginTop="72dp" android:text="Address" android:textStyle="bold" android:textAllCaps="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/street" tools:text="Street"
+            app:layout_constraintTop_toBottomOf="@+id/address" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suite" tools:text="Suite"
+            app:layout_constraintTop_toBottomOf="@+id/address"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="128dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city" tools:text="City"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"
+            app:layout_constraintTop_toBottomOf="@+id/street" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zipcode" tools:text="Zipcode"
+            app:layout_constraintTop_toBottomOf="@+id/suite" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="128dp" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geo"
+            app:layout_constraintTop_toBottomOf="@+id/address" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp" android:text="Geolocalisation" android:textStyle="bold"
+            android:textAllCaps="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geoLat"
+            app:layout_constraintTop_toBottomOf="@+id/geo" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" android:layout_marginTop="8dp" tools:text="Latitude"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/geoLng" tools:text="Lng"
+            app:layout_constraintTop_toBottomOf="@+id/geo" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="128dp" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone" tools:text="E.T. téléphone Maison"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"
+            app:layout_constraintTop_toBottomOf="@+id/company" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/website" tools:text="website"
+            app:layout_constraintTop_toBottomOf="@+id/phone"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/company"
+            app:layout_constraintTop_toBottomOf="@+id/geo" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp" tools:text="company" android:textStyle="bold" android:textAllCaps="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/companyCatchPhrase"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp" tools:text="Company Catch Phrase"
+            app:layout_constraintTop_toBottomOf="@+id/website" android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/companyBs"
+            app:layout_constraintTop_toBottomOf="@+id/companyCatchPhrase" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp" tools:text="Team BS"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
